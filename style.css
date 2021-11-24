@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    background: azure;
+}
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+nav{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: .5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand{
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-logo{
+    position: relative;
+    width: 40px;
+    height: auto;
+    margin-right: 1rem;
+}
+.brand-name{
+    color: #006A4E;
+}
+.menu{
+    position: relative;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu a{
+    color: #000;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 600;
+    transition: all .4s ease;
+}
+.menu a:hover{
+    text-shadow: 0 5px 4px rgb(185, 185, 185);
+}
+.cta{
+    position: relative;
+    width: 125px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #00ad7f, #006A4E);
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: .8rem;
+    color: #FFF;
+}
+
+#hero{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-left{
+    position: relative;
+    width: 70%;
+    height: inherit;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.hero-content{
+    max-width: 60%;
+}
+.hero-content h1{
+    color: #006A4E;
+    font-size: 4rem;
+}
+
+.hero-right{
+    position: relative;
+    width: 50%;
+    height: inherit;
+    background: linear-gradient(120deg, #00ad7f, #006A4E);
+    clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.heroimg{
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    max-width: 450px;
+    height: auto;
+    z-index: 10;
+    filter: drop-shadow(10px 5px 15px #00523c);
+}
+
+
+.counter-box{
+    position: fixed;
+    bottom: 1%;
+    left: 1%;
+    padding: 1rem;
+    color: #FFF;
+    background: linear-gradient(180deg, #003a86,#1437ff9c);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.counter-box p{
+    color: rgb(120, 255, 255);
+}
+.counter-box h1{
+    position: relative;
+    width: 100%;
+    text-align: left;
+}
+
+
+@media (max-width: 768px) {
+    .nav-logo{
+        max-width: 30px;
+    }
+    .brand-name{
+        font-size: 1.5rem;
+    }
+    .menu{
+        position: absolute;
+        top: 10vh;
+        width: 90%;
+    }
+    .cta{
+        width: 80px;
+        height: 36px;
+        font-size: .6rem;
+    }
+
+    #hero{
+        flex-direction: column;
+    }
+    .hero-left{
+        height: 70%;
+    }
+    .hero-right{
+        height: 30%;
+    }
+    .hero-left, .hero-right{
+        width: 100%;
+    }
+    .hero-content{
+        position: relative;
+        max-width: unset;
+        bottom: 10%;
+    }
+    .hero-content h1{
+        font-size: 2rem;
+    }
+    .hero-content p{
+        font-size: .75rem;
+    }
+    .hero-right{
+        clip-path: unset;
+    }
+    .heroimg{
+        top: unset;
+        left: unset;
+        bottom: 10%;
+        max-width: 250px;
+        align-self: center;
+    }
+}
