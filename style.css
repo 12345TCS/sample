@@ -139,7 +139,7 @@ nav{
 .counter-box p{
     color: rgb(120, 255, 255);
 }
-.counter-box h1{
+.counter-box h3{
     position: relative;
     width: 100%;
     text-align: left;
