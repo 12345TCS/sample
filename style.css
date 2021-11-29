@@ -138,9 +138,19 @@ nav{
     background: #FFF;
 }
 .eye{
-    font-size: 2rem;
-    color: gray;
+    width: 20px;
+    height: auto;
 }
 #visitors{
+    font-size: 1.25rem;
     color: darkslategray;
+}
+
+@media (max-width: 768px) {
+    .hero-heading{
+        font-size: 2.5rem;
+    }
+    .hero-tagline{
+        font-size: .8rem;
+    }
 }
