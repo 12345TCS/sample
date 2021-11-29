@@ -4,50 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#006A4E">
-
-    <title>42069</title>
+    <title>Document</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/logo42069.png" type="image/x-icon">
-
+    <script src="assets/js/navbar.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <div class="brand"><img src="assets/logo42069.png" alt="42069" class="nav-logo"><h1 class="brand-name">42069</h1></div>
-            <div class="menu">
-                <a href="#" class="menu-item">about</a>
-                <a href="#" class="menu-item">services</a>
-                <a href="#" class="menu-item">team</a>
+            <div class="menu" id="menu" onclick="openMenu()">
+                <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 33.866666 33.866668"
+                    version="1.1"
+                    id="svg5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:svg="http://www.w3.org/2000/svg">
+                    <defs
+                        id="defs2" />
+                    <rect
+                        style="fill:#000000;stroke:none;stroke-width:0.558853;stroke-linecap:round;stroke-linejoin:round"
+                        id="rect1043"
+                        width="33.866665"
+                        height="4"
+                        x="0"
+                        y="8"
+                        ry="2" />
+                    <rect
+                        style="fill:#000000;stroke:none;stroke-width:0.558853;stroke-linecap:round;stroke-linejoin:round"
+                        id="rect1147"
+                        width="33.866665"
+                        height="4"
+                        x="-33.866665"
+                        y="22"
+                        ry="2"
+                        transform="scale(-1,1)" />
+                </svg>
+
             </div>
-            <div class="cta-area">
-                <a href="#" class="cta">contact</a>
-            </div>
+            <div class="nav-logo"><img src="assets/logo42069.png" alt="42069"></div>
+            <a href="#" class="cart">
+                <p id="cart-items">4</p>
+                <img src="assets/bag.png" alt="Your cart">
+            </a>
         </nav>
     </header>
-    <section id="hero">
-        <div class="hero-left">
-            <div class="hero-content">
-                <h1>42069</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque esse totam adipisci commodi debitis nisi.</p>
-                <br>
-                <a href="#" class="cta">contact</a>
-            </div>
-        </div>
-        <div class="hero-right"></div>
-        <img src="assets/heroimg.png" alt="42069" class="heroimg">
+    <section>
+        
     </section>
-
-
-    <div class="counter-box">
-        <p>Steps Count</p>
-        <h3 id="xoutput">0</h3>
-        <h3 id="youtput">0</h3>
-        <h3 id="zoutput">0</h3>
-    </div>
-
-
-    <script src="assets/stepscounter.js"></script>
 </body>
 </html>
