@@ -70,7 +70,7 @@ nav{
     height: auto;
     object-fit: contain;
     animation: heroanimate 5s linear 0s infinite;
-    animation-direction: alternate;
+    animation-direction: linear;
     
 }
 .nav-logo p{
