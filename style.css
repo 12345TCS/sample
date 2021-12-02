@@ -69,6 +69,9 @@ nav{
     width: 28px;
     height: auto;
     object-fit: contain;
+    animation: heroanimate 5s linear 0s infinite;
+    animation-direction: alternate;
+    
 }
 .nav-logo p{
     position: relative;
@@ -98,10 +101,6 @@ nav{
     place-content: center;
     background-color: rgb(195, 0, 0);
     color: #FFF;
-}
-.cart img{
-    width: inherit;
-    height: auto;
 }
 
 #side-menu{
