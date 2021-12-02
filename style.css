@@ -47,12 +47,12 @@ nav{
     cursor: pointer;
 }
 #rect1043{
-    fill: #FFF;
+    fill: #f7c327ff;
     transform-origin: 25% 25%;
     transition: all .5s ease-in-out;
 }
 #rect1147{
-    fill: #FFF;
+    fill: #f7c327ff;
     transition: all .5s ease-in-out;
 }
 
@@ -307,14 +307,8 @@ nav{
     font-weight: 600;
     text-transform: capitalize;
 }
-
-.cta:hover{
-    width: 80vw;
-    background: linear-gradient(40deg, fuchsia,  #B026FF);
-    border-color: #B026FF;
-}
 .cta:hover a{
-    color: #FFFFFF;
+    color: #f7c327ff;
 }
 
 .visitor-counter{
