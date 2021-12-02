@@ -71,7 +71,7 @@ nav{
 .nav-logo p{
     position: relative;
     margin-top: 5px;
-    color: #FFFFFF;
+    color: #f7c327ff;
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -109,7 +109,7 @@ nav{
     width: 20vw;
     height: 100vh;
     padding: 1rem;
-    background: #680748ee;
+    background: rgba(243, 214, 127, 0.9);
     transition: all .6s ease;
     z-index: 9;
 }
@@ -125,7 +125,7 @@ nav{
 }
 .side-menu--link{
     margin-bottom: 1rem;
-    color: #FFFFFF;
+    color: #000;
 }
 .side-menu--link h3{
     font-weight: 600;
@@ -192,7 +192,7 @@ nav{
 .hero-left h1{
     font-size: 4rem;
     font-family: 'Orbitron', sans-serif;
-    color: #B026FF;
+    color: #f7c327ff;
 }
 
 .hero-right{
@@ -283,6 +283,7 @@ nav{
 .cta a{
     color: #FFFFFF;
     font-weight: 600;
+    text-transform: capitalize;
 }
 
 .cta:hover{
@@ -310,9 +311,8 @@ nav{
     z-index: 10;
 }
 .eye{
-    width: 15px;
-    height: auto;
-    filter: invert(180);
+    width: auto;
+    height: 20px;
 }
 #visitors{
     font-size: 0.75rem;
