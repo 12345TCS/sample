@@ -47,10 +47,12 @@ nav{
     cursor: pointer;
 }
 #rect1043{
+    fill: #FFF;
     transform-origin: 25% 25%;
     transition: all .5s ease-in-out;
 }
 #rect1147{
+    fill: #FFF;
     transition: all .5s ease-in-out;
 }
 
@@ -124,17 +126,15 @@ nav{
     justify-content: center;
 }
 .side-menu--link{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: #000;
 }
 .side-menu--link h3{
+    font-family: 'Orbitron', sans-serif;
     font-weight: 600;
 }
 
 @media (max-width: 768px) {
-    #rect1043, #rect1147{
-        fill: #FFFFFF !important;
-    }
 
     #svg5{
         width: 28px;
@@ -153,9 +153,13 @@ nav{
         width: 80vw;
         left: -80vw;
     }
+    
+    .side-menu--link h3{
+        font-size: 1.5rem;
+    }
 
     .cta a p{
-        max-width: 90%;
+        max-width: unset;
         font-size: .8rem;
     }
 }
@@ -312,7 +316,7 @@ nav{
 }
 .eye{
     width: auto;
-    height: 20px;
+    height: 13px;
 }
 #visitors{
     font-size: 0.75rem;
