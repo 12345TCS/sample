@@ -78,6 +78,8 @@ nav{
     margin-top: 5px;
     color: #f7c327ff;
     font-family: 'Orbitron', sans-serif;
+    animation: heroanimate 5s linear 0s infinite;
+    animation-direction: linear;
 }
 
 .cart{
@@ -112,6 +114,10 @@ nav{
     padding: 1rem;
     background: rgba(243, 214, 127, 0.9);
     transition: all .6s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
     z-index: 9;
 }
 
@@ -131,6 +137,15 @@ nav{
 .side-menu--link h3{
     font-family: 'Orbitron', sans-serif;
     font-weight: 600;
+}
+#blank-div{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 100%;
+    z-index: 5;
+    background-color: transparent;
 }
 
 @media (max-width: 768px) {
@@ -155,6 +170,10 @@ nav{
     
     .side-menu--link h3{
         font-size: 1.5rem;
+    }
+
+    #blank-div{
+        width: 20vw;
     }
 
     .cta a p{
