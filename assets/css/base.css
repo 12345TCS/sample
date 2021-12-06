@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Moon Beam #EFE5CC */
+
+body{
+    min-height: 100vh;
+    background-color: #141010;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    padding: .5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+nav{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    cursor: pointer;
+}
+#rect1043{
+    fill: #f7c327ff;
+    transform-origin: 25% 25%;
+    transition: all .5s ease-in-out;
+}
+#rect1147{
+    fill: #f7c327ff;
+    transition: all .5s ease-in-out;
+}
+
+.nav-logo{
+    position: relative;
+    top: 5px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav-logo img{
+    width: 28px;
+    height: auto;
+    object-fit: contain;
+    animation: heroanimate 5s linear 0s infinite;
+    animation-direction: linear;
+    
+}
+.nav-logo p{
+    position: relative;
+    margin-top: 5px;
+    color: #f7c327ff;
+    font-family: 'Orbitron', sans-serif;
+    animation: heroanimate 5s linear 0s infinite;
+    animation-direction: linear;
+}
+
+.cart{
+    width: 32px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+#cart-items{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    border-radius: 50%;
+    font-size: .7rem;
+    display: grid;
+    place-content: center;
+    background-color: rgb(195, 0, 0);
+    color: #FFF;
+}
+
+#side-menu{
+    position: fixed;
+    top: 0;
+    left: -20vw;
+    width: 20vw;
+    height: 100vh;
+    padding: 1rem;
+    background: rgba(243, 214, 127, 0.9);
+    transition: all .6s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 9;
+}
+
+.side-menu--container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.side-menu--link{
+    margin-bottom: 1.5rem;
+    color: #000;
+}
+.side-menu--link h3{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+}
+#blank-div{
+    position: fixed;
+    top: -100vh;
+    right: 0;
+    width: 80vw;
+    height: 100%;
+    z-index: 5;
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+
+    #svg5{
+        width: 28px;
+        height: 28px;
+    }
+    .cart{
+        width: 28px;
+    }
+    #cart-items{
+        width: 16px;
+        height: 16px;
+        font-size: .6rem;
+    }
+
+    #side-menu{
+        width: 80vw;
+        left: -80vw;
+    }
+    
+    .side-menu--link h3{
+        font-size: 1.5rem;
+    }
+
+    #blank-div{
+        width: 20vw;
+    }
+
+    .cta a p{
+        max-width: unset;
+        font-size: .8rem;
+    }
+}
+
+
+.visitor-counter{
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    min-width: 60px;
+    height: auto;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+}
+.eye{
+    width: auto;
+    height: 13px;
+}
+#visitors{
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: gray;
+}
+
+
+/* Footer styling starts here */
+footer{
+    position: relative;
+    top: 100vh;
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    background: #0f0f0f;
+    color: #fff;
+    padding: 1rem;
+  }
+  footer a{
+    color: #fff;
+  }
+  footer .footercontainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  footer .footercontainer .row{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+  footer .footercontainer .row .col{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  footer .footercontainer .row .col .brandlogo{
+    width: 185px;
+    height: 50%;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .footercontainer .row .col .brandlogo h1{
+      font-family: 'Orbitron', sans-serif;
+  }
+  footer .footercontainer .row .col .brandlogo .footerlogo{
+    width: 40px;
+    height: auto;
+    object-fit: contain;
+  }
+  footer .footercontainer .row .col .brandinfo{
+    width: 80%;
+    color: rgb(200, 200, 200);
+  }
+  footer .footercontainer .row .col .footerheading{
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    font-size: .7rem !important;
+  }
+  footer .footercontainer .row .col .footerheading h1{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  footer .footercontainer .row .col ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footercontainer .row .col ul li{
+    text-transform: capitalize;
+    margin-bottom: 7.5px;
+  }
+  .separator{
+    position: relative;
+    margin: auto;
+    height: 3.5px;
+    width: 80%;
+    background: skyblue;
+    border-radius: 5px;
+  }
+  .social{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .footercontainer .social .socialicon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    place-content: center;
+  }
+  footer .footercontainer .social .socialicon img{
+    width: 30px;
+    height: 30px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    footer .footercontainer .row{
+        flex-direction: column;
+    }
+    footer .footercontainer .row .col .footerheading{
+        margin-top: 2rem;
+        margin-bottom: .5rem;
+    }
+  }
+  
+  /* Footer styling ends here */
